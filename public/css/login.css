@@ -1,0 +1,315 @@
+:root {
+    --yellow: #EAC926;
+    --dark-blue: #03264C;
+    --light-blue: #1259c3;
+    --gray: #666666;
+    --light-gray: #ebebeb;
+    --green: #39b54a;
+    --base-font-family: 'Roboto', sans-serif
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-gray);
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ======== HEADER ======== */
+
+.main-header {
+    background-color: var(--yellow);
+}
+
+.main-header-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header-top-bar a img{
+    width: 100%;
+}
+
+.copy-header {
+    font-size: 15px;
+    text-align: center;
+}
+
+.search-bar {
+    display: flex;
+    text-align: right;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.search-bar input {
+    height: 24px;
+    width: 50%;
+    border-radius: 5%;
+}
+
+.search-bar i{
+    padding-left:5px;
+    align-items: center;
+}
+
+.searchbutton {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
+    transition: border-radius 0.5s;
+}
+
+.searchbutton:hover {
+    border-radius: 50%;
+}
+
+header h3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-links ul {
+    list-style: none;
+    text-align: left;
+}
+
+.nav-links {
+    display: none;
+}
+
+div.burger-menu {
+   text-align: center;
+   padding-top: 8px;
+   padding-bottom: 12px;
+}
+
+div.burger-menu i {
+   color: #ebebeb;
+   background-color: #1259c3;
+   padding: 10px;
+   margin: auto;
+   border-radius: 5px;
+   font-size: 18px;
+}
+
+.banner img {
+    width: 100%;
+ 
+}
+
+/* ======== MAIN ======== */
+
+.main-login {
+    background-color: var(--light-gray);
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px 20px 20px 20px;
+
+}
+
+.main-login div {
+    text-align: left;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.loginbutton{
+    padding: 5px 5px 5px 5px;
+    transition: all 0.5s;
+}
+
+.loginbutton:hover{
+    background-color:#0022AA;
+    color:#ffffff;
+}
+
+p {
+    font-size: 12px;
+}
+
+main div {
+   text-align: center;
+}
+
+/* ======== FOOTER ======== */
+
+footer {
+    background-color: var(--light-gray);
+    padding-top: 10px;
+    text-align: center;
+}
+
+.main-footer {
+    
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 80px;
+    background-color: #ffffff;
+    color: var(--gray);
+}
+
+.subfooter {
+    background-color:#ffffff;
+    margin: 0px;
+} 
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #ffffff;
+}
+
+.container p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 0px;
+    color: var(--gray);
+}
+
+.sub-footer .subcontainer {
+    display: flex;
+    background-color: white;
+    justify-content: left;
+    padding-left: 45px;
+}
+
+div.credit-card i {
+    color:#1259c3;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+div.gift i {
+    color:#1259c3; 
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+div.user-shield i {
+    color:#1259c3;
+    font-size: 2em;
+    padding-bottom: 10px;
+}
+
+footer article div {
+    
+    padding-top: 15px;
+}
+
+/* ======== MEDIA QUERIES ======== */
+
+@media (min-width: 361px) {
+
+    div.burger-menu {
+        display:none;
+    }
+
+    .copy-header {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .nav-links {
+        display: flex;
+        font-size: 12px;
+        justify-content: space-between;
+    }
+
+    .nav-links-left {
+        display: flex;
+    }
+
+    .nav-links-left li {
+        margin: 0 5px;
+    }
+
+    .nav-links-right {
+        display: flex;
+    }
+
+    .nav-links-right li {
+        margin: 0 5px;
+    }
+
+   .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+   
+}
+
+@media (min-width:512px) {
+
+    .search-bar input {
+        width: 75%;
+    }
+}
+
+@media (min-width:700px) {
+
+    .nav-links ul {
+        font-size: 14px;
+    }
+
+    .search-bar input {
+        width: 100%;
+    }
+}
+
+@media (min-width: 769px) {
+
+    .main-header-top-bar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-header-top-bar img {
+        width: 25%;
+    }
+
+    .main-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container {
+        margin-left: 0px;
+        margin-right: 0px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sub-footer .subcontainer{
+        display: flex;
+        justify-content: left;
+    }
+  
+    .credit-card i:hover {
+        color:#39b54a;
+    }
+
+    .gift i:hover {
+        color:#39b54a;
+    }
+
+    .user-shield i:hover {
+        color:#39b54a;
+    }
+}
+
+@media (min-width: 900px) {
+
+
+}
